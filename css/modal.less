@@ -1,0 +1,47 @@
+/*MODAL */
+.modal{
+	z-index : 9;
+	position: fixed;	
+	
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+	display: table;
+
+	.modal-close-btn{
+		position: absolute;
+		top: 1%;
+		right: 1%;
+		line-height: 20px;
+		cursor: pointer;
+	}
+
+	&:before{
+		position: absolute;
+		content: "";
+		background-color: #000;
+		opacity: .85;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	.modal-body{
+		display: table-cell;
+		width: 100%;
+		color: white;
+		font-size: 1.5rem;
+		font-weight: bold;
+		text-align: center;
+		vertical-align: middle;
+
+		.modal-content { 
+			margin: 0 2rem;
+			padding: 2rem;
+		}
+	}
+}

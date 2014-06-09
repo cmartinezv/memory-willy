@@ -1,0 +1,32 @@
+{
+  "name": "memory-willy",
+  "version": "0.0.0",
+  "authors": [
+    "Carlos <carlosmartinezvila@gmail.com>"
+  ],
+  "description": "A simple memory game",
+  "main": "css/main.css",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "jquery",
+    "game"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "requirejs": "latest",
+    "jquery-tmpl": "*",
+    "hammerjs": "~1.1.3",
+    "jasmine": "~2.0.0"
+  }
+}
