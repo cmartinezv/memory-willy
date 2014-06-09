@@ -1,0 +1,110 @@
+html{ height: 100%;}
+
+body{
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #00a651;
+	font-family: IndieFlower;
+}
+
+
+/* LAYOUT */
+
+#cards-wrapper{
+	position: relative;
+	width: 100%;
+	.box-sizing(border-box);
+	padding: 5% 0 10% 0; 
+}
+
+.panel{
+	display: none;
+	position: fixed;
+	text-align: center;
+	color: white;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	text-shadow: .1rem .1rem rgb(83, 66, 53);
+	z-index : 10;
+	padding: .5rem 1.25rem;
+
+	h3{
+		padding: 0;
+		margin: 0; 
+		font-size: 1rem;
+	}
+
+	&:before{
+		content: "";
+		background-color: #00A68D;
+		opacity: .85;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		border-radius: 50%;
+		z-index : -1;
+	}
+}
+
+
+#points-panel{
+	bottom: 1%;
+	left: 1%;
+}
+
+#moves-panel{
+	bottom: 1%;
+	right: 1%;
+}
+
+#bombs-panel{
+	top: 1%;
+	left: 1%;
+}
+
+#info-btn-panel{
+	top: 1%;
+	right: 1%;	
+	cursor: pointer;
+}
+
+#help-modal-panel{
+	.info-wrapper-options{
+		padding: 0;
+		font-size: 1.5rem;
+
+		li{ padding-bottom: 1rem;}
+	}
+}
+
+#reset-btn-panel{
+	bottom: 1%;
+	left: 50%;
+	margin-left: -30px; 
+	cursor: pointer;
+	padding: 1rem 1rem;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	display: none;
+}
+
+
+#langs-wrapper{
+	position: absolute;
+	top: 1%;
+	right: 1%;
+
+	.btn-lang{
+		margin: 0 1rem;
+		&.active{
+			box-shadow: 0px 0px 22px #FBE;
+			border-radius: 25px;
+		}
+	}
+}
+
+
+
