@@ -8,4 +8,4 @@ A sample memory game using:
 
 ## Demo
 
-> [Check it live]( http://cmartinezv.github.io/my_projects/memory-willy/).
+> [Check it live]( http://cmartinezv.github.io/memory-willy/).
